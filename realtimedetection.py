@@ -7,7 +7,10 @@ model_json = json_file.read()
 json_file.close()
 model = model_from_json(model_json)
 
-model.load_weights("emotiondetector.h5")
+model.load_weig
+
+
+hts("emotiondetector.h5")
 haar_file=cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'
 face_cascade=cv2.CascadeClassifier(haar_file)
 
@@ -22,7 +25,7 @@ while True:
     i,im=webcam.read()
     gray=cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
     faces=face_cascade.detectMultiScale(im,1.3,5)
-    try: 
+    try:
         for (p,q,r,s) in faces:
             image = gray[q:q+s,p:p+r]
             cv2.rectangle(im,(p,q),(p+r,q+s),(255,0,0),2)
