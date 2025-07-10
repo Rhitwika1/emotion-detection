@@ -45,7 +45,8 @@ This dataset is compatible with projects involving:
 - Image classification
 - Real-time emotion detection (webcam-based or static image)
 - AI-based sentiment analysis tools
-The link if the dataset is pasted.
+The link if the dataset is https://www.kaggle.com/datasets/ananthu017/emotion-detection-fer/data 
+The dataset can also be downloaded from the link and then paste in folder of your file or directly unzip from the file in the repository.
 
 ## How to Use
 
