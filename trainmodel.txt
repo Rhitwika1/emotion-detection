@@ -52,7 +52,7 @@ def extract_features(images):
         img = np.array(img)  # convert to numpy array
         features.append(img)  # add to feature list
     features = np.array(features)  # convert list to numpy array
-    features = features.reshape(len(features), 48, 48, 1)  # reshape to 4D tensor (batch, height, width, channel)
+    features = features.reshape(len(features), 48, 48, 1)  # reshape to 4D tensor (batch, height, width, channel) 4D tensor is the format cnn accept for image data, 1 is for grayscale                                                                  which is the channel, it would have been 3 for RGB
     return features
 
 
